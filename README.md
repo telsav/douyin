@@ -2,6 +2,8 @@
 
 flutte_app is a Flutter library for dealing with douyin app.
 
+![抖音截图](douyin.gif)
+
 ## Installation
 
 Use the package manager [Flutter](https://flutter.dev/) to install foobar.
