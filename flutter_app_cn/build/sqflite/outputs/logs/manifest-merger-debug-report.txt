@@ -1,0 +1,19 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\src\flutter\.pub-cache\hosted\pub.flutter-io.cn\sqflite-1.3.0+1\android\src\main\AndroidManifest.xml:1:1-3:12
+INJECTED from C:\src\flutter\.pub-cache\hosted\pub.flutter-io.cn\sqflite-1.3.0+1\android\src\main\AndroidManifest.xml:1:1-3:12
+INJECTED from C:\src\flutter\.pub-cache\hosted\pub.flutter-io.cn\sqflite-1.3.0+1\android\src\main\AndroidManifest.xml:1:1-3:12
+	package
+		ADDED from C:\src\flutter\.pub-cache\hosted\pub.flutter-io.cn\sqflite-1.3.0+1\android\src\main\AndroidManifest.xml:2:5-35
+		INJECTED from C:\src\flutter\.pub-cache\hosted\pub.flutter-io.cn\sqflite-1.3.0+1\android\src\main\AndroidManifest.xml
+		INJECTED from C:\src\flutter\.pub-cache\hosted\pub.flutter-io.cn\sqflite-1.3.0+1\android\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\src\flutter\.pub-cache\hosted\pub.flutter-io.cn\sqflite-1.3.0+1\android\src\main\AndroidManifest.xml:1:11-69
+uses-sdk
+INJECTED from C:\src\flutter\.pub-cache\hosted\pub.flutter-io.cn\sqflite-1.3.0+1\android\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\src\flutter\.pub-cache\hosted\pub.flutter-io.cn\sqflite-1.3.0+1\android\src\main\AndroidManifest.xml
+INJECTED from C:\src\flutter\.pub-cache\hosted\pub.flutter-io.cn\sqflite-1.3.0+1\android\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\src\flutter\.pub-cache\hosted\pub.flutter-io.cn\sqflite-1.3.0+1\android\src\main\AndroidManifest.xml
+		ADDED from C:\src\flutter\.pub-cache\hosted\pub.flutter-io.cn\sqflite-1.3.0+1\android\src\main\AndroidManifest.xml
+		INJECTED from C:\src\flutter\.pub-cache\hosted\pub.flutter-io.cn\sqflite-1.3.0+1\android\src\main\AndroidManifest.xml
