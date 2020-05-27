@@ -14,8 +14,7 @@ class _DouyinVideoPlayerState extends State<DouyinVideoPlayer> {
   //Future<void> _initializeVideoPlayerFuture;
   @override
   void initState() {
-    //_controller = VideoPlayerController.network(widget.url)
-    _controller=VideoPlayerController.network("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4")
+    _controller = VideoPlayerController.network(widget.url)
       ..initialize().then((_) {
         setState(() {
           _controller.play();

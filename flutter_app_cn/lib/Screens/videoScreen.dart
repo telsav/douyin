@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_desktop/models/Douyin.dart';
-import 'package:flutter_desktop/widgets/video_description.dart';
-import 'package:flutter_desktop/widgets/actions_toolbar.dart';
-import 'package:flutter_desktop/widgets/player.dart';
+import 'package:flutter_app/models/Douyin.dart';
+import 'package:flutter_app/widgets/video_description.dart';
+import 'package:flutter_app/widgets/actions_toolbar.dart';
+import 'package:flutter_app/widgets/player.dart';
 
 class VideoItem extends StatelessWidget {
   final VideoData data;
   final String videourl;
-  const VideoItem({@required this.data,this.videourl});
+  const VideoItem({@required this.data, this.videourl});
 
   @override
   Widget build(BuildContext context) {
@@ -40,8 +40,8 @@ class VideoItem extends StatelessWidget {
         child: Padding(
           padding: EdgeInsets.symmetric(vertical: 28.0),
           child: Text(
-            "Trending | For You",
-            style: TextStyle(color: Colors.white, fontSize: 19.0),
+            "关注 | 推荐",
+            style: TextStyle(color: Colors.white, fontSize: 16.0),
           ),
         ),
       );

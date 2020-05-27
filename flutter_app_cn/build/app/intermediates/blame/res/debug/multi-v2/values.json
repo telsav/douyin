@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Administrator\\source\\repos\\douyinapp\\flutter_app_cn\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\Administrator\\source\\repos\\douyinappcn\\flutter_app_cn\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\source\\repos\\douyinapp\\flutter_app_cn\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Users\\Administrator\\source\\repos\\douyinappcn\\flutter_app_cn\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

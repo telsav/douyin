@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter_desktop/common/icons.dart';
+import 'package:flutter_app/common/icons.dart';
 
 const double CreateButtomWidth = 38.0;
 Widget get customCreateIcon => Container(

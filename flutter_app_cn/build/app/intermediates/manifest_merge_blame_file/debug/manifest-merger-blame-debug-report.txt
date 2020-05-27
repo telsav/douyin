@@ -12,37 +12,37 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->C:\Users\Administrator\source\repos\douyinapp\flutter_app_cn\android\app\src\main\AndroidManifest.xml:8:5-66
-14-->C:\Users\Administrator\source\repos\douyinapp\flutter_app_cn\android\app\src\main\AndroidManifest.xml:8:22-64
+14-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:8:5-66
+14-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:8:22-64
 15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 15-->[com.google.android.exoplayer:exoplayer-core:2.9.6] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\b3b3422eb27c0492cf8bfba4803c6fa1\jetified-exoplayer-core-2.9.6\AndroidManifest.xml:24:5-79
 15-->[com.google.android.exoplayer:exoplayer-core:2.9.6] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\b3b3422eb27c0492cf8bfba4803c6fa1\jetified-exoplayer-core-2.9.6\AndroidManifest.xml:24:22-76
 16
 17    <application
-17-->C:\Users\Administrator\source\repos\douyinapp\flutter_app_cn\android\app\src\main\AndroidManifest.xml:9:5-47:19
+17-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:9:5-47:19
 18        android:name="io.flutter.app.FlutterApplication"
-18-->C:\Users\Administrator\source\repos\douyinapp\flutter_app_cn\android\app\src\main\AndroidManifest.xml:10:9-57
+18-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:10:9-57
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 19-->[androidx.core:core:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:24:18-86
 20        android:debuggable="true"
 21        android:icon="@mipmap/ic_launcher"
-21-->C:\Users\Administrator\source\repos\douyinapp\flutter_app_cn\android\app\src\main\AndroidManifest.xml:12:9-43
+21-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:12:9-43
 22        android:label="flutter_app" >
-22-->C:\Users\Administrator\source\repos\douyinapp\flutter_app_cn\android\app\src\main\AndroidManifest.xml:11:9-36
+22-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:11:9-36
 23        <activity
-23-->C:\Users\Administrator\source\repos\douyinapp\flutter_app_cn\android\app\src\main\AndroidManifest.xml:13:9-41:20
+23-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:13:9-41:20
 24            android:name="com.example.flutter_app.MainActivity"
-24-->C:\Users\Administrator\source\repos\douyinapp\flutter_app_cn\android\app\src\main\AndroidManifest.xml:14:13-41
+24-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:14:13-41
 25            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-25-->C:\Users\Administrator\source\repos\douyinapp\flutter_app_cn\android\app\src\main\AndroidManifest.xml:17:13-163
+25-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:17:13-163
 26            android:hardwareAccelerated="true"
-26-->C:\Users\Administrator\source\repos\douyinapp\flutter_app_cn\android\app\src\main\AndroidManifest.xml:18:13-47
+26-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:18:13-47
 27            android:launchMode="singleTop"
-27-->C:\Users\Administrator\source\repos\douyinapp\flutter_app_cn\android\app\src\main\AndroidManifest.xml:15:13-43
+27-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:15:13-43
 28            android:theme="@style/LaunchTheme"
-28-->C:\Users\Administrator\source\repos\douyinapp\flutter_app_cn\android\app\src\main\AndroidManifest.xml:16:13-47
+28-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:16:13-47
 29            android:windowSoftInputMode="adjustResize" >
-29-->C:\Users\Administrator\source\repos\douyinapp\flutter_app_cn\android\app\src\main\AndroidManifest.xml:19:13-55
+29-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:19:13-55
 30
 31            <!--
 32                 Specifies an Android theme to apply to this Activity as soon as
@@ -51,11 +51,11 @@
 35                 to determine the Window background behind the Flutter UI.
 36            -->
 37            <meta-data
-37-->C:\Users\Administrator\source\repos\douyinapp\flutter_app_cn\android\app\src\main\AndroidManifest.xml:24:13-27:17
+37-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:24:13-27:17
 38                android:name="io.flutter.embedding.android.NormalTheme"
-38-->C:\Users\Administrator\source\repos\douyinapp\flutter_app_cn\android\app\src\main\AndroidManifest.xml:25:15-70
+38-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:25:15-70
 39                android:resource="@style/NormalTheme" />
-39-->C:\Users\Administrator\source\repos\douyinapp\flutter_app_cn\android\app\src\main\AndroidManifest.xml:26:15-52
+39-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:26:15-52
 40            <!--
 41                 Displays an Android View that continues showing the launch screen
 42                 Drawable until Flutter paints its first frame, then this splash
@@ -64,21 +64,21 @@
 45                 Flutter's first frame.
 46            -->
 47            <meta-data
-47-->C:\Users\Administrator\source\repos\douyinapp\flutter_app_cn\android\app\src\main\AndroidManifest.xml:33:13-36:17
+47-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:33:13-36:17
 48                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-48-->C:\Users\Administrator\source\repos\douyinapp\flutter_app_cn\android\app\src\main\AndroidManifest.xml:34:15-79
+48-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:34:15-79
 49                android:resource="@drawable/launch_background" />
-49-->C:\Users\Administrator\source\repos\douyinapp\flutter_app_cn\android\app\src\main\AndroidManifest.xml:35:15-61
+49-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:35:15-61
 50
 51            <intent-filter>
-51-->C:\Users\Administrator\source\repos\douyinapp\flutter_app_cn\android\app\src\main\AndroidManifest.xml:37:13-40:29
+51-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:37:13-40:29
 52                <action android:name="android.intent.action.MAIN" />
-52-->C:\Users\Administrator\source\repos\douyinapp\flutter_app_cn\android\app\src\main\AndroidManifest.xml:38:17-68
-52-->C:\Users\Administrator\source\repos\douyinapp\flutter_app_cn\android\app\src\main\AndroidManifest.xml:38:25-66
+52-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:38:17-68
+52-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:38:25-66
 53
 54                <category android:name="android.intent.category.LAUNCHER" />
-54-->C:\Users\Administrator\source\repos\douyinapp\flutter_app_cn\android\app\src\main\AndroidManifest.xml:39:17-76
-54-->C:\Users\Administrator\source\repos\douyinapp\flutter_app_cn\android\app\src\main\AndroidManifest.xml:39:27-74
+54-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:39:17-76
+54-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:39:27-74
 55            </intent-filter>
 56        </activity>
 57        <!--
@@ -86,11 +86,11 @@
 59             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 60        -->
 61        <meta-data
-61-->C:\Users\Administrator\source\repos\douyinapp\flutter_app_cn\android\app\src\main\AndroidManifest.xml:44:9-46:33
+61-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:44:9-46:33
 62            android:name="flutterEmbedding"
-62-->C:\Users\Administrator\source\repos\douyinapp\flutter_app_cn\android\app\src\main\AndroidManifest.xml:45:13-44
+62-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:45:13-44
 63            android:value="2" />
-63-->C:\Users\Administrator\source\repos\douyinapp\flutter_app_cn\android\app\src\main\AndroidManifest.xml:46:13-30
+63-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:46:13-30
 64    </application>
 65
 66</manifest>

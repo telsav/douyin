@@ -1,11 +1,11 @@
 // ADD THIS IMPORT
-import 'package:flutter/foundation.dart'
-    show debugDefaultTargetPlatformOverride;
+//import 'package:flutter/foundation.dart'
+//    show debugDefaultTargetPlatformOverride;
 import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_desktop/Screens/homeScreen.dart';
-//import 'package:flutter_desktop/common/custom_proxy.dart';
+import 'package:flutter_app/Screens/homeScreen.dart';
+//import 'package:flutter_app/common/custom_proxy.dart';
 
 // void main() async {
 //   if (!kReleaseMode) {
@@ -30,7 +30,7 @@ Future<Null> main() async {
 
   runZoned<Future<Null>>(() async {
     // ADD THIS LINE
-    debugDefaultTargetPlatformOverride = TargetPlatform.windows;
+    //debugDefaultTargetPlatformOverride = TargetPlatform.windows;
     runApp(MyApp());
   }, onError: (error, stackTrace) async {
     await _reportError(error, stackTrace);

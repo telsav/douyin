@@ -2,13 +2,13 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:getflutter/getflutter.dart';
-import 'package:flutter_desktop/config/api.dart';
-import 'package:flutter_desktop/models/Douyin.dart';
+import 'package:flutter_app/config/api.dart';
+import 'package:flutter_app/models/Douyin.dart';
 import 'package:http/http.dart' as http;
-import 'package:flutter_desktop/Screens/videoScreen.dart';
+import 'package:flutter_app/Screens/videoScreen.dart';
 
 class Trending extends StatefulWidget {
-  _TrendingState createState() => _TrendingState();
+  State<StatefulWidget> createState() => _TrendingState();
 }
 
 class _TrendingState extends State<Trending> {
@@ -18,8 +18,6 @@ class _TrendingState extends State<Trending> {
   List<Widget> videos = [];
 
   getTrending() async {
-    //var cookies = await api.getCookie();
-    //api.setCookie(cookies);
     try {
       var response = await http.get(
         api.url,
@@ -30,7 +28,7 @@ class _TrendingState extends State<Trending> {
         (item) {
           setState(() {
             getVideos(item);
-            print(item.toJson());
+            //print(item.toJson());
           });
         },
       );
@@ -59,7 +57,7 @@ class _TrendingState extends State<Trending> {
                   data: videoData,
                   videourl: url,
                 )),
-                print(url),
+                //print(url),
               }
           });
     } catch (ex) {
@@ -76,6 +74,12 @@ class _TrendingState extends State<Trending> {
   @override
   Widget build(BuildContext context) {
     context = context;
+    var sw = new Stopwatch();
+    sw.start();
+    print(videos.length);
+    sw.stop();
+    print(videos.length);
+    print(sw.elapsedMilliseconds);
     return PageView(
       scrollDirection: Axis.vertical,
       controller: pageController,

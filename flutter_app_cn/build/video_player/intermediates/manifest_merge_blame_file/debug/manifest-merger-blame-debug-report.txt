@@ -3,6 +3,6 @@
 3    package="io.flutter.plugins.videoplayer" >
 4
 5    <uses-sdk android:minSdkVersion="16" />
-5-->C:\src\flutter\.pub-cache\hosted\pub.flutter-io.cn\video_player-0.10.11\android\src\main\AndroidManifest.xml
+5-->C:\src\flutter\.pub-cache\hosted\pub.flutter-io.cn\video_player-0.10.11+1\android\src\main\AndroidManifest.xml
 6
 7</manifest>

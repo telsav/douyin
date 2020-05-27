@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_money_formatter/flutter_money_formatter.dart';
-import 'package:flutter_desktop/common/icons.dart';
+import 'package:flutter_app/common/icons.dart';
 
-class ActionsToolbar extends StatelessWidget {
+class ActionsToolbar extends StatefulWidget {
   final int favorite;
   final String comments;
   final String userImg;
@@ -11,15 +11,44 @@ class ActionsToolbar extends StatelessWidget {
   const ActionsToolbar(
       {Key key, this.favorite, this.comments, this.userImg, this.coverImg});
 
+  @override
+  State<StatefulWidget> createState() => new _ActionsToolbarState();
+}
+
+class _ActionsToolbarState extends State<ActionsToolbar>
+    with SingleTickerProviderStateMixin {
   static const double ActionWidgetSize = 60.0;
   static const double ActionIconSize = 35.0;
   static const double ShareActionIconSize = 25.0;
   static const double ProfileImageSize = 50.0;
   static const double PlusIconSize = 20.0;
+  AnimationController animationController;
+
+  @override
+  void initState() {
+    super.initState();
+    animationController = new AnimationController(
+      vsync: this,
+      duration: new Duration(seconds: 5),
+    );
+    animationController.repeat();
+  }
+
+  stopRotation() {
+    animationController.stop();
+  }
+
+  startRotation() {
+    animationController.repeat();
+  }
+
   @override
   Widget build(BuildContext context) {
     FlutterMoneyFormatter fmf =
-        FlutterMoneyFormatter(amount: double.parse(favorite.toString()));
+        FlutterMoneyFormatter(amount: double.parse(widget.favorite.toString()));
+
+    FlutterMoneyFormatter fmf2 =
+        FlutterMoneyFormatter(amount: double.parse(widget.comments));
 
     return Align(
         alignment: Alignment.bottomRight,
@@ -32,9 +61,11 @@ class ActionsToolbar extends StatelessWidget {
             _getSocialAction(
                 icon: DouyinIcons.heart,
                 title: '${fmf.output.compactNonSymbol}'),
-            _getSocialAction(icon: DouyinIcons.chat_bubble, title: comments),
             _getSocialAction(
-                icon: DouyinIcons.reply, title: 'Share', isShare: true),
+                icon: DouyinIcons.chat_bubble,
+                title: '${fmf2.output.compactNonSymbol}'),
+            _getSocialAction(
+                icon: DouyinIcons.reply, title: '分享', isShare: true),
             _getMusicPlayerAction()
           ],
         ));
@@ -46,7 +77,9 @@ class ActionsToolbar extends StatelessWidget {
         width: 60.0,
         height: 60.0,
         child: Column(children: [
-          Icon(icon, size: isShare ? 25.0 : 35.0, color: Colors.grey[300]),
+          Icon(icon,
+              size: isShare ? ShareActionIconSize : ActionIconSize,
+              color: Colors.grey[300]),
           Padding(
             padding: EdgeInsets.only(top: isShare ? 5.0 : 2.0),
             child:
@@ -58,8 +91,8 @@ class ActionsToolbar extends StatelessWidget {
   Widget _getFollowAction({String pictureUrl}) {
     return Container(
         margin: EdgeInsets.symmetric(vertical: 10.0),
-        width: 60.0,
-        height: 60.0,
+        width: ActionWidgetSize,
+        height: ActionWidgetSize,
         child: Stack(children: [_getProfilePicture(), _getPlusIcon()]));
   }
 
@@ -76,7 +109,7 @@ class ActionsToolbar extends StatelessWidget {
           child: Icon(
             Icons.add,
             color: Colors.white,
-            size: 20.0,
+            size: PlusIconSize,
           )),
     );
   }
@@ -94,7 +127,7 @@ class ActionsToolbar extends StatelessWidget {
               //borderRadius: BorderRadius.circular(ProfileImageSize / 2)),
               image: DecorationImage(
                   image: NetworkImage(
-                    userImg,
+                    widget.userImg,
                   ),
                   fit: BoxFit.cover),
             )));
@@ -119,17 +152,43 @@ class ActionsToolbar extends StatelessWidget {
         height: ActionWidgetSize,
         child: Column(children: [
           Container(
+            decoration: new BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(25.0)),
+              color: Colors.black54,
+            ),
             padding: EdgeInsets.all(11.0),
             height: ProfileImageSize,
             width: ProfileImageSize,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              gradient: musicGradient,
-              image: DecorationImage(
-                image: NetworkImage(coverImg),
-                fit: BoxFit.cover,
+            child: AnimatedBuilder(
+              animation: animationController,
+              child: Container(
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  gradient: musicGradient,
+                  //border: Border.all(color: Colors.black87, width: 11.0),
+                  image: DecorationImage(
+                    image: NetworkImage(widget.coverImg),
+                    fit: BoxFit.cover,
+                  ),
+                ),
               ),
+              builder: (BuildContext context, Widget _widget) {
+                return Transform.rotate(
+                  angle: animationController.value * 6.3,
+                  child: _widget,
+                );
+              },
             ),
+
+            // decoration: BoxDecoration(
+            //   shape: BoxShape.circle,
+            //   gradient: musicGradient,
+            //   border: Border.all(color: Colors.black87, width: 11.0),
+            //   image: DecorationImage(
+            //     image: NetworkImage(widget.coverImg),
+            //     fit: BoxFit.cover,
+            //   ),
+            // ),
           ),
         ]));
   }

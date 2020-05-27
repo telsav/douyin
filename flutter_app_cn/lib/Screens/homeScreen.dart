@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_desktop/Screens/trendingScreen.dart';
-import 'package:flutter_desktop/widgets/bottom_toolbar.dart';
+import 'package:flutter_app/Screens/trendingScreen.dart';
+import 'package:flutter_app/widgets/bottom_toolbar.dart';
 
 class Home extends StatefulWidget {
   @override
-  HomeState createState() => HomeState();
+  State<StatefulWidget> createState() => _HomeState();
 }
 
-class HomeState extends State<Home> {
+class _HomeState extends State<Home> {
   int currentIndex = 0;
   PageController pageController;
 
