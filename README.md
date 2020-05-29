@@ -18,12 +18,13 @@ Wait for project creation to complete and the main.dart file to appear.
 
 ## 代办事项
 
--[x] 视频上下播放 -[x] 数据显示正常
--[] 评论
--[] 搜索
--[] 聊天
--[] 点赞
--[] 分享
+- [x] 视频上下播放
+- [x] 数据显示正常
+- [ ] 评论
+- [ ] 搜索
+- [ ] 聊天
+- [ ] 点赞
+- [ ] 分享
 
 ## Usage
 
