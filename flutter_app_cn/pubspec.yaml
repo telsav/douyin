@@ -39,6 +39,7 @@ dependencies:
   video_player: ^0.10.11+1
   dio: ^3.0.9
   dio_cookie_manager: ^1.0.0
+  marquee_widget: ^0.8.0
 
 dev_dependencies:
   flutter_test:

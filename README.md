@@ -1,4 +1,4 @@
-# 使用Flutter模仿抖音国外版
+# 使用 Flutter 模仿抖音国外版
 
 flutte_app is a Flutter library for dealing with douyin app.
 
@@ -15,6 +15,15 @@ Enter a project name, such as myapp, and press Enter.
 Create or select the parent directory for the new project folder.
 Wait for project creation to complete and the main.dart file to appear.
 ```
+
+## 代办事项
+
+-[x] 视频上下播放 -[x] 数据显示正常
+-[] 评论
+-[] 搜索
+-[] 聊天
+-[] 点赞
+-[] 分享
 
 ## Usage
 
@@ -44,9 +53,11 @@ class HomeState extends State<Home> {
 ```
 
 ## Contributing
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
 ## License
+
 [MIT](https://choosealicense.com/licenses/mit/)

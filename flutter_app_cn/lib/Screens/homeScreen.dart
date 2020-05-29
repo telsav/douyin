@@ -21,6 +21,7 @@ class _HomeState extends State<Home> {
         ],
         onPageChanged: (int index) {
           setState(() {
+            print('Index: ' + index.toString());
             currentIndex = index;
           });
         },

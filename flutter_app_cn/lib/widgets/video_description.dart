@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:marquee_widget/marquee_widget.dart';
 
 class VideoDescription extends StatefulWidget {
   final String userName;
@@ -60,8 +61,16 @@ class VideoDescriptionState extends State<VideoDescription>
             ),
             Row(children: [
               Icon(Icons.music_note, size: 15.0, color: Colors.white),
-              Text('${widget.musicName} - ${widget.authorName}',
-                  style: TextStyle(fontSize: 12.0))
+              Container(
+                width: 150,
+                child: Marquee(
+                  child: Text('${widget.musicName} - ${widget.authorName}'),
+                  direction: Axis.horizontal,
+                  textDirection: TextDirection.ltr,
+                  animationDuration: Duration(seconds: 1),
+                  directionMarguee: DirectionMarguee.oneDirection,
+                ),
+              ),
             ])
           ],
         ),
