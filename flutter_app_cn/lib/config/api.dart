@@ -1,5 +1,3 @@
-import 'dart:io';
-import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
 import 'package:dio/dio.dart';
 
@@ -40,9 +38,9 @@ class RequestController {
       if (response.statusCode == 302) {
         return response.data.toString().split('"')[1];
       }
-      return '';
+      return 'error';
     } catch (ex) {
-      return '';
+      return 'error';
     }
   }
 

@@ -4,6 +4,7 @@
 import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_app/Screens/homeScreen.dart';
 //import 'package:flutter_app/common/custom_proxy.dart';
 
@@ -32,6 +33,9 @@ Future<Null> main() async {
     // ADD THIS LINE
     //debugDefaultTargetPlatformOverride = TargetPlatform.windows;
     runApp(MyApp());
+    SystemUiOverlayStyle systemUiOverlayStyle =
+        SystemUiOverlayStyle(statusBarColor: Colors.transparent);
+    SystemChrome.setSystemUIOverlayStyle(systemUiOverlayStyle);
   }, onError: (error, stackTrace) async {
     await _reportError(error, stackTrace);
   });
@@ -46,8 +50,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: true,
-      title: 'Flutter Demo',
+      //debugShowCheckedModeBanner: true,
+      title: 'Douyin App',
       theme: ThemeData(
         // This is the theme of your application.
         //
