@@ -48,12 +48,6 @@ BottomNavigationBar bottomItems(currentIndex, pageController) {
     unselectedItemColor: Colors.white,
     elevation: 0.5,
     onTap: (index) => currentIndex = index,
-    // onTap: (int index) {
-    //   setState(
-    //     () {
-    //       currentIndex = index;
-    //     },
-    //   );
     currentIndex: currentIndex,
     type: BottomNavigationBarType.fixed,
     items: <BottomNavigationBarItem>[

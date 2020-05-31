@@ -91,6 +91,15 @@
 62-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:45:13-44
 63            android:value="2" />
 63-->C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:46:13-30
-64    </application>
-65
-66</manifest>
+64
+65        <activity
+65-->[:url_launcher] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+66            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+66-->[:url_launcher] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+67            android:exported="false"
+67-->[:url_launcher] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+68            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+68-->[:url_launcher] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+69    </application>
+70
+71</manifest>

@@ -6,9 +6,11 @@ INJECTED from C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\and
 INJECTED from C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:1:1-48:12
 MERGED from C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:1:1-48:12
 MERGED from [:video_player] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\video_player\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:url_launcher] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-14:12
 MERGED from [:sqflite] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:path_provider] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:flutter_money_formatter] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\flutter_money_formatter\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:url_launcher_web] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\url_launcher_web\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\0986d0d74b8a2c7da8161f6370fc7744\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\615cab8ad6393a9c868d48761bbea666\activity-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\28d99d5113324aa067757f8ca41a426f\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -51,6 +53,8 @@ MERGED from C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\andro
 		ADDED from C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:8:22-64
 application
 ADDED from C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml:9:5-47:19
+MERGED from [:url_launcher] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-12:19
 MERGED from [androidx.core:core:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\3a7eb299570065a3866b140e1a95969b\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
@@ -111,12 +115,16 @@ INJECTED from C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\and
 INJECTED from C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml
 MERGED from [:video_player] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\video_player\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:video_player] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\video_player\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:sqflite] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:sqflite] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_money_formatter] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\flutter_money_formatter\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_money_formatter] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\flutter_money_formatter\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_web] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\url_launcher_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_web] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\url_launcher_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\0986d0d74b8a2c7da8161f6370fc7744\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\0986d0d74b8a2c7da8161f6370fc7744\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\615cab8ad6393a9c868d48761bbea666\activity-1.0.0\AndroidManifest.xml:20:5-22:41
@@ -159,6 +167,14 @@ INJECTED from C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\and
 	android:minSdkVersion
 		INJECTED from C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\android\app\src\debug\AndroidManifest.xml
+activity#io.flutter.plugins.urllauncher.WebViewActivity
+ADDED from [:url_launcher] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+	android:exported
+		ADDED from [:url_launcher] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+	android:theme
+		ADDED from [:url_launcher] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+	android:name
+		ADDED from [:url_launcher] C:\Users\Administrator\source\repos\douyinappcn\flutter_app_cn\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.android.exoplayer:exoplayer-core:2.9.6] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\b3b3422eb27c0492cf8bfba4803c6fa1\jetified-exoplayer-core-2.9.6\AndroidManifest.xml:24:5-79
 	android:name

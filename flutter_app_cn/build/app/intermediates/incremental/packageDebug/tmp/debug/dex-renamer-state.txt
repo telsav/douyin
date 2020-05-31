@@ -1,4 +1,4 @@
-#Thu May 28 23:27:52 CST 2020
+#Sun May 31 18:19:44 CST 2020
 base.0=C\:\\Users\\Administrator\\source\\repos\\douyinappcn\\flutter_app_cn\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

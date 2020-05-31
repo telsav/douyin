@@ -43,6 +43,12 @@ class _ActionsToolbarState extends State<ActionsToolbar>
   }
 
   @override
+  void dispose() {
+    animationController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     FlutterMoneyFormatter fmf =
         FlutterMoneyFormatter(amount: double.parse(widget.favorite.toString()));
@@ -72,20 +78,26 @@ class _ActionsToolbarState extends State<ActionsToolbar>
   }
 
   Widget _getSocialAction({String title, IconData icon, bool isShare = false}) {
-    return Container(
-        margin: EdgeInsets.only(top: 15.0),
-        width: 60.0,
-        height: 60.0,
-        child: Column(children: [
-          Icon(icon,
-              size: isShare ? ShareActionIconSize : ActionIconSize,
-              color: Colors.grey[300]),
-          Padding(
-            padding: EdgeInsets.only(top: isShare ? 5.0 : 2.0),
-            child:
-                Text(title, style: TextStyle(fontSize: isShare ? 10.0 : 12.0)),
-          )
-        ]));
+    return InkWell(
+      onTap: () {
+        //Navigator.pushNamed(context, title);
+        print('????$title');
+      },
+      child: Container(
+          margin: EdgeInsets.only(top: 15.0),
+          width: 60.0,
+          height: 60.0,
+          child: Column(children: [
+            Icon(icon,
+                size: isShare ? ShareActionIconSize : ActionIconSize,
+                color: Colors.grey[300]),
+            Padding(
+              padding: EdgeInsets.only(top: isShare ? 5.0 : 2.0),
+              child: Text(title,
+                  style: TextStyle(fontSize: isShare ? 10.0 : 12.0)),
+            )
+          ])),
+    );
   }
 
   Widget _getFollowAction({String pictureUrl}) {
@@ -179,16 +191,6 @@ class _ActionsToolbarState extends State<ActionsToolbar>
                 );
               },
             ),
-
-            // decoration: BoxDecoration(
-            //   shape: BoxShape.circle,
-            //   gradient: musicGradient,
-            //   border: Border.all(color: Colors.black87, width: 11.0),
-            //   image: DecorationImage(
-            //     image: NetworkImage(widget.coverImg),
-            //     fit: BoxFit.cover,
-            //   ),
-            // ),
           ),
         ]));
   }

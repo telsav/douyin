@@ -84,27 +84,35 @@ class VideoData {
   ExtraData extra;
 
   VideoData.fromJson(Map<String, dynamic> json) {
-    this.statusCode = json["status_code"];
-    if (json['item_list'] != null) {
-      itemList = new List<Itemlist>();
-      json['item_list'].forEach((v) {
-        itemList.add(new Itemlist.fromJson(v));
-      });
+    try {
+      this.statusCode = json["status_code"];
+      if (json['item_list'] != null) {
+        itemList = new List<Itemlist>();
+        json['item_list'].forEach((v) {
+          itemList.add(new Itemlist.fromJson(v));
+        });
+      }
+      this.extra =
+          json["extra"] != null ? new ExtraData.fromJson(json["extra"]) : null;
+    } catch (e) {
+      throw e;
     }
-    this.extra =
-        json["extra"] != null ? new ExtraData.fromJson(json["extra"]) : null;
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data["status_code"] = this.statusCode;
-    if (this.itemList != null) {
-      data['item_list'] = this.itemList.map((v) => v.toJson()).toList();
+    try {
+      final Map<String, dynamic> data = new Map<String, dynamic>();
+      data["status_code"] = this.statusCode;
+      if (this.itemList != null) {
+        data['item_list'] = this.itemList.map((v) => v.toJson()).toList();
+      }
+      if (this.extra != null) {
+        data["extra"] = this.extra.toJson();
+      }
+      return data;
+    } catch (e) {
+      throw e;
     }
-    if (this.extra != null) {
-      data["extra"] = this.extra.toJson();
-    }
-    return data;
   }
 }
 
@@ -171,104 +179,112 @@ class Itemlist {
       this.longvideo});
 
   Itemlist.fromJson(Map<String, dynamic> json) {
-    this.awemeid = json["aweme_id"];
-    this.videolabels = json["video_labels"];
-    this.labeltoptext = json["label_top_text"];
-    this.category = json["category"];
-    this.author =
-        json["author"] != null ? new Author.fromJson(json["author"]) : null;
-    this.duration = json["duration"];
-    this.promotions = json["promotions"];
-    this.ispreview = json["is_preview"];
-    this.createtime = json["create_time"];
-    if (json["cha_list"] != null) {
-      this.chalist = new List<ChaList>();
-      json["cha_list"].forEach((v) {
-        this.chalist.add(new ChaList.fromJson(v));
-      });
+    try {
+      this.awemeid = json["aweme_id"];
+      this.videolabels = json["video_labels"];
+      this.labeltoptext = json["label_top_text"];
+      this.category = json["category"];
+      this.author =
+          json["author"] != null ? new Author.fromJson(json["author"]) : null;
+      this.duration = json["duration"];
+      this.promotions = json["promotions"];
+      this.ispreview = json["is_preview"];
+      this.createtime = json["create_time"];
+      if (json["cha_list"] != null) {
+        this.chalist = new List<ChaList>();
+        json["cha_list"].forEach((v) {
+          this.chalist.add(new ChaList.fromJson(v));
+        });
+      }
+      this.commentlist = json["comment_list"];
+      this.authoruserid = json["author_user_id"];
+      this.videotext = json["video_text"];
+      this.groupid = json["group_id"];
+      this.islivereplay = json["is_live_replay"];
+      this.shareinfo = json["share_info"] != null
+          ? new ShareInfo.fromJson(json["share_info"])
+          : null;
+      this.position = json["position"];
+      this.imageinfos = json["image_infos"];
+      this.riskinfos = json["risk_infos"] != null
+          ? new RiskInfos.fromJson(json["risk_infos"])
+          : null;
+      this.uniqidposition = json["uniqid_position"];
+      this.geofencing = json["geofencing"];
+      this.statistics = json["statistics"] != null
+          ? new Statistics.fromJson(json["statistics"])
+          : null;
+      this.awemetype = json["aweme_type"];
+      this.music =
+          json["music"] != null ? new Music.fromJson(json["music"]) : null;
+      if (json["text_extra"] != null) {
+        this.textExtras = new List<TextExtra>();
+        json['text_extra'].forEach((v) {
+          this.textExtras.add(new TextExtra.formJson(v));
+        });
+      }
+      this.video =
+          json["video"] != null ? new Video.fromJson(json["video"]) : null;
+      this.shareurl = json["share_url"];
+      this.desc = json["desc"];
+      this.longvideo = json["long_video"];
+    } catch (e) {
+      throw e;
     }
-    this.commentlist = json["comment_list"];
-    this.authoruserid = json["author_user_id"];
-    this.videotext = json["video_text"];
-    this.groupid = json["group_id"];
-    this.islivereplay = json["is_live_replay"];
-    this.shareinfo = json["share_info"] != null
-        ? new ShareInfo.fromJson(json["share_info"])
-        : null;
-    this.position = json["position"];
-    this.imageinfos = json["image_infos"];
-    this.riskinfos = json["risk_infos"] != null
-        ? new RiskInfos.fromJson(json["risk_infos"])
-        : null;
-    this.uniqidposition = json["uniqid_position"];
-    this.geofencing = json["geofencing"];
-    this.statistics = json["statistics"] != null
-        ? new Statistics.fromJson(json["statistics"])
-        : null;
-    this.awemetype = json["aweme_type"];
-    this.music =
-        json["music"] != null ? new Music.fromJson(json["music"]) : null;
-    if (json["text_extra"] != null) {
-      this.textExtras = new List<TextExtra>();
-      json['text_extra'].forEach((v) {
-        textExtras.add(new TextExtra.formJson(v));
-      });
-    }
-    this.video =
-        json["video"] != null ? new Video.fromJson(json["video"]) : null;
-    this.shareurl = json["share_url"];
-    this.desc = json["desc"];
-    this.longvideo = json["long_video"];
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data["aweme_id"] = this.awemeid;
-    data["video_labels"] = this.videolabels;
-    data["label_top_text"] = this.labeltoptext;
-    data["category"] = this.category;
-    if (this.author != null) {
-      data["author"] = this.author.toJson();
+    try {
+      final Map<String, dynamic> data = new Map<String, dynamic>();
+      data["aweme_id"] = this.awemeid;
+      data["video_labels"] = this.videolabels;
+      data["label_top_text"] = this.labeltoptext;
+      data["category"] = this.category;
+      if (this.author != null) {
+        data["author"] = this.author.toJson();
+      }
+      data["duration"] = this.duration;
+      data["promotions"] = this.promotions;
+      data["is_preview"] = this.ispreview;
+      data["create_time"] = this.createtime;
+      if (this.chalist != null) {
+        data["cha_list"] = this.chalist.map((e) => e.toJson()).toList();
+      }
+      data["comment_list"] = this.commentlist;
+      data["author_user_id"] = this.authoruserid;
+      data["video_text"] = this.videotext;
+      data["group_id"] = this.groupid;
+      data["is_live_replay"] = this.islivereplay;
+      if (this.shareinfo != null) {
+        data["share_info"] = this.shareinfo.toJson();
+      }
+      data["position"] = this.position;
+      data["image_infos"] = this.imageinfos;
+      if (this.riskinfos != null) {
+        data["risk_infos"] = this.riskinfos.toJson();
+      }
+      data["uniqid_position"] = this.uniqidposition;
+      data["geofencing"] = this.geofencing;
+      if (this.statistics != null) {
+        data["statistics"] = this.statistics.toJson();
+      }
+      data["aweme_type"] = this.awemetype;
+      if (this.music != null) {
+        data["music"] = this.music.toJson();
+      }
+      if (this.textExtras != null) {
+        data["text_extra"] = this.textExtras.map((e) => e.toJson()).toList();
+      }
+      if (this.video != null) {
+        data["video"] = this.video.toJson();
+      }
+      data["share_url"] = this.shareurl;
+      data["desc"] = this.desc;
+      data["long_video"] = this.longvideo;
+      return data;
+    } catch (e) {
+      throw e;
     }
-    data["duration"] = this.duration;
-    data["promotions"] = this.promotions;
-    data["is_preview"] = this.ispreview;
-    data["create_time"] = this.createtime;
-    if (this.chalist != null) {
-      data["cha_list"] = this.chalist.map((e) => e.toJson()).toList();
-    }
-    data["comment_list"] = this.commentlist;
-    data["author_user_id"] = this.authoruserid;
-    data["video_text"] = this.videotext;
-    data["group_id"] = this.groupid;
-    data["is_live_replay"] = this.islivereplay;
-    if (this.shareinfo != null) {
-      data["share_info"] = this.shareinfo.toJson();
-    }
-    data["position"] = this.position;
-    data["image_infos"] = this.imageinfos;
-    if (this.riskinfos != null) {
-      data["risk_infos"] = this.riskinfos.toJson();
-    }
-    data["uniqid_position"] = this.uniqidposition;
-    data["geofencing"] = this.geofencing;
-    if (this.statistics != null) {
-      data["statistics"] = this.statistics.toJson();
-    }
-    data["aweme_type"] = this.awemetype;
-    if (this.music != null) {
-      data["music"] = this.music.toJson();
-    }
-    if (this.textExtras != null) {
-      data["text_extra"] = this.textExtras.map((e) => e.toJson()).toList();
-    }
-    if (this.video != null) {
-      data["video"] = this.video.toJson();
-    }
-    data["share_url"] = this.shareurl;
-    data["desc"] = this.desc;
-    data["long_video"] = this.longvideo;
-    return data;
   }
 }
 
