@@ -2,7 +2,7 @@
 
 flutte_app is a Flutter library for dealing with douyin app.
 
-![抖音截图](douyin.gif)
+![抖音截图](douyin4.gif)
 
 ## Tasks
 
