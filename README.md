@@ -1,6 +1,10 @@
 # 使用 Flutter 模仿抖音国外版, 本项目持续更新
 
-flutte_app is a Flutter library for dealing with douyin app.
+## 版本
+
+- 抖音国际版
+- 抖音国内手机版
+- 抖音国内桌面版
 
 ![抖音截图](douyin4.gif)
 
@@ -20,7 +24,7 @@ Use the package manager [Flutter](https://flutter.dev/) to install foobar.
 
 ```bash
 Invoke View > Command Palette.
-Type “flutter”, and select the Flutter: New Project.
+Type "flutter", and select the Flutter: New Project.
 Enter a project name, such as myapp, and press Enter.
 Create or select the parent directory for the new project folder.
 Wait for project creation to complete and the main.dart file to appear.
