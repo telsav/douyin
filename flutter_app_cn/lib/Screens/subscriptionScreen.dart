@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/Screens/loginScreen.dart';
-import 'package:flutter_app/common/utils.dart';
 
 class Subscription extends StatefulWidget {
   @override
