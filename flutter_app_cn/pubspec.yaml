@@ -37,10 +37,15 @@ dependencies:
   getflutter: ^1.0.11
   flutter_money_formatter: ^0.8.3
   video_player: ^0.10.11+1
+  fijkplayer:
+    git:
+      url: https://github.com/befovy/fijkplayer.git
+      ref: develop
   dio: ^3.0.9
   dio_cookie_manager: ^1.0.0
   marquee_widget: ^0.8.0
   url_launcher: ^5.4.10
+  expandable: ^4.1.4
 
 dev_dependencies:
   flutter_test:

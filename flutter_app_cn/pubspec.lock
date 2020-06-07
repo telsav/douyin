@@ -92,6 +92,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.0.0"
+  expandable:
+    dependency: "direct main"
+    description:
+      name: expandable
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "4.1.4"
   fake_async:
     dependency: transitive
     description:
@@ -99,6 +106,15 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.1.0"
+  fijkplayer:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: develop
+      resolved-ref: "524540bf9ca7fe5795d329cb133b4457d23be73e"
+      url: "https://github.com/befovy/fijkplayer.git"
+    source: git
+    version: "0.8.4"
   file:
     dependency: transitive
     description:
@@ -377,7 +393,7 @@ packages:
       name: test_api
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "0.2.15"
+    version: "0.2.16"
   typed_data:
     dependency: transitive
     description:
