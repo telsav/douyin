@@ -10,7 +10,7 @@ class _HomeTabState extends State<HomeTab> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: bottomItems(null, null),
+      child: Container(),
     );
   }
 }

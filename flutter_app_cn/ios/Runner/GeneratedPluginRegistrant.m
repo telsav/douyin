@@ -4,6 +4,12 @@
 
 #import "GeneratedPluginRegistrant.h"
 
+#if __has_include(<fijkplayer/FijkPlugin.h>)
+#import <fijkplayer/FijkPlugin.h>
+#else
+@import fijkplayer;
+#endif
+
 #if __has_include(<flutter_money_formatter/FlutterMoneyFormatterPlugin.h>)
 #import <flutter_money_formatter/FlutterMoneyFormatterPlugin.h>
 #else
@@ -37,6 +43,7 @@
 @implementation GeneratedPluginRegistrant
 
 + (void)registerWithRegistry:(NSObject<FlutterPluginRegistry>*)registry {
+  [FijkPlugin registerWithRegistrar:[registry registrarForPlugin:@"FijkPlugin"]];
   [FlutterMoneyFormatterPlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterMoneyFormatterPlugin"]];
   [FLTPathProviderPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTPathProviderPlugin"]];
   [SqflitePlugin registerWithRegistrar:[registry registrarForPlugin:@"SqflitePlugin"]];

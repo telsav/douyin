@@ -4,6 +4,7 @@ import 'package:flutter_app/Screens/subscriptionScreen.dart';
 import 'package:flutter_app/Screens/trendingScreen.dart';
 //import 'package:flutter_app/widgets/bottom_toolbar.dart';
 import 'package:flutter_app/common/icons.dart';
+//https://stackoverflow.com/questions/50667783/show-bottomsheet-beneath-bottomnavigationbar
 
 class Home extends StatefulWidget {
   const Home({Key key}) : super(key: key);
@@ -15,7 +16,9 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   int currentIndex = 0;
   TabController _tabController;
   PageController _pageController;
-
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+  final bool useRootNavigator = true;
+  Widget popup;
   final List<Tab> toptabs = <Tab>[
     Tab(
       child: Text('关注',
@@ -56,7 +59,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //backgroundColor: Colors.transparent,
+      key: _scaffoldKey,
       body: Stack(
         //fit: StackFit.expand,
         children: <Widget>[
@@ -114,7 +117,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           ),
         ],
       ),
-      bottomNavigationBar: bottomItems(),
+      bottomNavigationBar: bottomItems(_scaffoldKey, context),
+      drawer: Container(),
     );
   }
 
@@ -156,8 +160,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           ],
         ),
       );
-
-  BottomNavigationBar bottomItems() {
+  BottomNavigationBar bottomItems(
+      GlobalKey<ScaffoldState> _scaffoldKey, BuildContext context) {
     return BottomNavigationBar(
       backgroundColor: Colors.black,
       selectedItemColor: Colors.white,
@@ -167,17 +171,61 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
         setState(() {
           currentIndex = index;
           print(index);
+          switch (index) {
+            case 0:
+              _tabController.animateTo(1); //默认推荐选项卡
+              
+              break;
+            case 1:
+              popup = Subscription();
+              break;
+            case 2:
+              popup = Subscription();
+              break;
+            case 3:
+              popup = Login();
+              break;
+            case 4:
+              popup = Login();
+              break;
+          }
         });
-        Scaffold.of(context).showBottomSheet<void>((BuildContext context) {
-          return Login();
-        });
+        if (popup != null) {
+          if (useRootNavigator) {
+            showModalBottomSheet(
+                useRootNavigator: useRootNavigator,
+                context: context,
+                isScrollControlled: true,
+                builder: (BuildContext bc) {
+                  return Padding(
+                    padding: EdgeInsets.only(
+                        top: MediaQuery.of(context).padding.top),
+                    child: popup,
+                  );
+                });
+          } else {
+            showModalBottomSheet(
+                useRootNavigator: useRootNavigator,
+                context: context,
+                builder: (BuildContext bc) {
+                  return Padding(
+                    padding: EdgeInsets.only(
+                        top: MediaQuery.of(context).padding.top),
+                    child: popup,
+                  );
+                });
+          }
+        }
       },
       currentIndex: currentIndex,
       type: BottomNavigationBarType.fixed,
       items: <BottomNavigationBarItem>[
         BottomNavigationBarItem(
-          icon: Icon(DouyinIcons.home),
-          title: SizedBox.shrink(),
+          icon: SizedBox.shrink(),
+          title: Text(
+            '首页',
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+          ),
         ),
         BottomNavigationBarItem(
             icon: Icon(DouyinIcons.search),
@@ -188,12 +236,18 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           title: SizedBox.shrink(),
         ),
         BottomNavigationBarItem(
-          icon: Icon(DouyinIcons.messages),
-          title: SizedBox.shrink(),
+          icon: SizedBox.shrink(), //Icon(DouyinIcons.messages),
+          title: Text(
+            '消息',
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+          ),
         ),
         BottomNavigationBarItem(
-          icon: Icon(DouyinIcons.profile),
-          title: SizedBox.shrink(),
+          icon: SizedBox.shrink(), //Icon(DouyinIcons.profile),
+          title: Text(
+            '我',
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+          ),
         ),
       ],
     );
