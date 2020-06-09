@@ -166,7 +166,7 @@ class _ActionsToolbarState extends State<ActionsToolbar>
           Container(
             decoration: new BoxDecoration(
               borderRadius: BorderRadius.all(Radius.circular(25.0)),
-              color: Colors.black54,
+              color: Colors.black45,
             ),
             padding: EdgeInsets.all(11.0),
             height: ProfileImageSize,

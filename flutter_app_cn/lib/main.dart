@@ -5,8 +5,9 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_app/Screens/homeScreen.dart';
+//import 'package:flutter_app/Screens/homeScreen.dart';
 //import 'package:flutter_app/common/custom_proxy.dart';
+import 'package:flutter_app/Routes/route_generator.dart';
 
 // void main() async {
 //   if (!kReleaseMode) {
@@ -72,7 +73,8 @@ class MyApp extends StatelessWidget {
             .textTheme
             .apply(bodyColor: Colors.white, displayColor: Colors.white),
       ),
-      home: Home(),
+      initialRoute: '/',
+      onGenerateRoute: RouteGenerator.generateRoute,
     );
   }
 }
